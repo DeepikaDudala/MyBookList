@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto p-3 h1" style="width: 300px">
+      <img src="img/book.svg" alt="img" style="width: 40px" />
+      My<span class="text-primary">Book</span>List
+    </div>
+    
+     <div class="alert alert-danger container-sm p-1" role="alert" style="display: none;"></div>
+    <div class="alert alert-success container-sm p-1" role="alert" style="display: none;"></div>
+
+   
+      <form id="book-form">
+        <div class="container-sm border p-5 border-2">
+          <div class="form-floating mb-5">
+            <input
+              type="text"
+              class="form-control"
+              id="bookName"
+              placeholder="Enter book Name"
+            />
+            <label for="bookName">Book Name</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input
+              type="text"
+              class="form-control"
+              id="authorName"
+              placeholder="Enter Author Name"
+            />
+            <label for="authorName">Author Name</label>
+          </div>
+          <div class="form-floating mb-5">
+            <input
+              type="text"
+              class="form-control"
+              id="isbn"
+              placeholder="Enter ISBN#"
+            />
+            <label for="isbn">ISBN#</label>
+          </div>
+
+          <div class="d-grid gap-2">
+            <button id="addBookBtn" class="btn btn-primary" type="submit">
+              Add Book
+            </button>
+          </div>
+        </div>
+      </form>
+    
+    <table class="table container-sm mt-5">
+      <thead class="table-light">
+        <th>Title</th>
+        <th>Author</th>
+        <th>ISBN#</th>
+        <th></th>
+      </thead>
+      <tbody id="book-list">
+        <tr></tr>
+      </tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
